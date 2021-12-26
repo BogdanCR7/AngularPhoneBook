@@ -1,0 +1,52 @@
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td, #customers th {
+
+  padding: 8px;
+
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
+#nonevisiblity{
+  display: none;
+}
+.mybutton{
+  margin-left: 50px;;
+}
+
+.search{
+
+  border-radius: 20px;
+  padding: 7px;
+  width: 220px;
+  border: 0 0 5px 0;
+margin: 10px 10px;
+}
+.search :focus{
+  outline: none;
+}
+.search::placeholder{
+
+    font-size: 1.2em;
+    font-weight: 700;
+    left: 5px;
+    position: relative;
+
+}
+*:focus {
+  outline: none;
+}

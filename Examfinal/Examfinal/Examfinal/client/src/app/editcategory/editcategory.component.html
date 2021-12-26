@@ -1,0 +1,12 @@
+<div class="main">
+
+  <input type="text" [(ngModel)]='category.name' required>
+  <div *ngIf="category.name.length==0">
+    The category is required
+  </div>
+  <div class="bottom">
+    <button type="button" [disabled]="category.name.length==0" (click)="Send()">Save</button>
+    <button type="button" style="background: red;">Cancel</button>
+  </div>
+
+</div>

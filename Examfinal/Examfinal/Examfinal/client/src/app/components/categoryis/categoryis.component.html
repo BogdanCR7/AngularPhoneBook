@@ -1,0 +1,30 @@
+<button (click)="Add()" color="primary" mat-flat-button>Add</button>
+<table id="customers">
+  <tr>
+    <th>Category</th>
+    <th>Count</th>
+    <th>Delete</th>
+    <th>Edit</th>
+  </tr>
+  <ng-container *ngFor="let group of obsValue">
+    <tr>
+      <td>
+        <h2>{{group.name}}</h2>
+      </td>
+      <td>
+        <h2>{{group.contactsCount}}</h2>
+      </td>
+      <td>
+        <div (click)="Delete(group.id,group.contactsCount)" style="cursor: pointer;width:40px;height: 40px;">
+          <mat-icon style="font-size:30px;">delete_outline</mat-icon>
+        </div>
+      </td>
+      <a [routerLink]="['/editcategiries',group.id]">
+        <td>
+
+          <mat-icon>edit</mat-icon>
+        </td>
+      </a>
+    </tr>
+  </ng-container>
+</table>

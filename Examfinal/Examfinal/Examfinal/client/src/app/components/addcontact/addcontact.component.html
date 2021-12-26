@@ -1,0 +1,84 @@
+<div class="main">
+  <form [formGroup]="buyTicketForm2" novalidate  (submit)="onSubmit()">
+    <div class="form-group">
+      <label>Name:</label>
+      <input class="form-control" name="name" formControlName="userName" />
+
+      <div class="_error"
+           *ngIf="buyTicketForm2.controls['userName'].invalid && buyTicketForm2.controls['userName'].touched">
+      Name is required
+      </div>
+    </div>
+    <div class="form-group">
+      <label>Description</label>
+      <input class="form-control" name="description" formControlName="description" />
+
+      <div class="_error"
+           *ngIf="buyTicketForm2.controls['description'].invalid && buyTicketForm2.controls['description'].touched">
+        Укажите описание длинной до 50 символов
+      </div>
+    </div>
+    <select (change)="onSelectedChange($event)" >
+
+      <option selected  *ngFor="let title of obsValue">
+       {{title.name}}
+  </option>
+    </select>
+    <div class="form-group">
+      <label>Email</label>
+      <input class="form-control" name="email" formControlName="email" placeholder='example@mail.ru'/>
+
+      <div class="_error"
+           *ngIf="buyTicketForm2.controls['email'].invalid && buyTicketForm2.controls['email'].touched">
+        Invalid email
+      </div>
+    </div>
+    <div class="form-group">
+      <label>Адрессс</label>
+      <input class="form-control" name="address" formControlName="address" />
+
+      <div class="_error"
+           *ngIf="buyTicketForm2.controls['address'].invalid && buyTicketForm2.controls['address'].touched">
+        Укажите адрессс длинной до 50 символов
+      </div>
+    </div>
+    <div class="form-group">
+      <label>Телефон</label>
+      <input class="form-control" name="phone" formControlName="phone" placeholder='+380713997373'/>
+
+      <div class="_error"
+           *ngIf="buyTicketForm2.controls['phone'].invalid && buyTicketForm2.controls['phone'].touched">
+        InValid phone
+      </div>
+    </div><div class="form-group">
+      <label>Телефон</label>
+      <input class="form-control" name="phone1" formControlName="phone1" />
+
+      <div class="_error"
+           *ngIf="buyTicketForm2.controls['phone1'].invalid && buyTicketForm2.controls['phone1'].touched">
+        Исправьте ошибки
+      </div>
+    </div><div class="form-group">
+      <label>Телефон</label>
+      <input class="form-control" name="phone2" formControlName="phone2" />
+
+      <div class="_error"
+           *ngIf="buyTicketForm2.controls['phone2'].invalid && buyTicketForm2.controls['phone2'].touched">
+        Исправьте ошибки
+      </div>
+    </div><div class="form-group">
+      <label>Телефон</label>
+      <input class="form-control" name="phone3" formControlName="phone3" />
+
+      <div class="_error"
+           *ngIf="buyTicketForm2.controls['phone3'].invalid && buyTicketForm2.controls['phone3'].touched">
+        Исправьте ошибки
+      </div>
+    </div>
+    <div class="form-group">
+      <button type="submit" class="btn btn-default" [disabled]="buyTicketForm2.invalid">
+        Save
+      </button>
+    </div>
+  </form>
+</div>

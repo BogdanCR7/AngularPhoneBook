@@ -1,0 +1,51 @@
+<ul *ngIf="isLoggedIn()">
+  <li>
+    <a
+      [routerLink]="['/contacts']"
+      routerLinkActive="active"
+      [routerLinkActiveOptions]="{ exact: true }"
+      >Contacts</a
+    >
+  </li>
+  <li>
+    <a
+      [routerLink]="['/categiries']"
+      routerLinkActive="active"
+      [routerLinkActiveOptions]="{ exact: true }"
+      >Categories</a
+    >
+  </li>
+  <li><a routerLink="" (click)="logout()">Logout</a></li>
+</ul>
+<div
+  *ngIf="!isLoggedIn()"
+  style="background-color: #080710; width: 100%; height: 100vh"
+>
+  <div class="background">
+    <div class="shape"></div>
+    <div class="shape"></div>
+  </div>
+  <form [formGroup]="checkoutForm" (ngSubmit)="onSubmit()">
+    <h3>Login Here</h3>
+
+    <label for="username">Username</label>
+    <input
+      type="text"
+      placeholder="Email or Phone"
+      id="username"
+      formControlName="email"
+    />
+
+    <label for="password">Password</label>
+    <input
+      type="password"
+      placeholder="Password"
+      id="password"
+      formControlName="password"
+    />
+
+    <button type="submit">Log In</button>
+  </form>
+</div>
+
+<router-outlet *ngIf="isLoggedIn()"></router-outlet>

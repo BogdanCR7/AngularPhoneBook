@@ -1,0 +1,44 @@
+<input type="search" [(ngModel)]="search" class="search" placeholder="Search">
+
+
+
+<mat-form-field appearance="fill">
+  <mat-label>Category</mat-label>
+  <mat-select (selectionChange)="onSelectedChange($event.value)">
+    <mat-option  >All</mat-option >
+    <mat-option *ngFor="let category of obscategory" [value]="category.name">
+      {{category.name}}
+    </mat-option>
+  </mat-select>
+
+</mat-form-field>
+<button   (click)="Add()" color="primary" style="margin-left:10px; border-radius: 45%;height: 35px;width: 75px;"  mat-flat-button>Add</button>
+<table id="customers">
+  <tr><th>name</th>
+  <th>description</th>
+  <th>adress</th>
+  <th>email</th>
+  <th>category</th>
+  <th>PhoneNumbers</th>
+  <th>Delete</th></tr>
+  <ng-container *ngFor="let group of obsValue | myfilter:search:selectedValue">
+    <tr id="nonevisiblity">
+    <tr><td><h2>{{group.name}}</h2></td>
+  <td><h2>{{group.description}}</h2></td>
+  <td><h2>{{group.adress}}</h2></td>
+  <td><h2>{{group.email}}</h2></td>
+  <td><h2>{{group.category}}</h2></td>
+  <td>
+  <ng-container *ngFor="let number of group.phoneNumbers">
+    <h2>{{number}}</h2>
+</ng-container>
+</td>
+  <td>
+    <div (click)="Delete(group.id)" style="cursor: pointer;width:40px;height: 40px;">
+    <mat-icon style="font-size:30px;"  >delete_outline</mat-icon>
+  </div>
+  </td>
+</tr>
+</ng-container>
+</table>
+
