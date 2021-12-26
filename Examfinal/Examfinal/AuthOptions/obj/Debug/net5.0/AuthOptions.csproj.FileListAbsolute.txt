@@ -1,0 +1,12 @@
+D:\Програмирование\Angular\Examfinal\Examfinal\AuthOptions\bin\Debug\net5.0\AuthOptions.deps.json
+D:\Програмирование\Angular\Examfinal\Examfinal\AuthOptions\bin\Debug\net5.0\AuthOptions.dll
+D:\Програмирование\Angular\Examfinal\Examfinal\AuthOptions\bin\Debug\net5.0\ref\AuthOptions.dll
+D:\Програмирование\Angular\Examfinal\Examfinal\AuthOptions\bin\Debug\net5.0\AuthOptions.pdb
+D:\Програмирование\Angular\Examfinal\Examfinal\AuthOptions\obj\Debug\net5.0\AuthOptions.csproj.AssemblyReference.cache
+D:\Програмирование\Angular\Examfinal\Examfinal\AuthOptions\obj\Debug\net5.0\AuthOptions.GeneratedMSBuildEditorConfig.editorconfig
+D:\Програмирование\Angular\Examfinal\Examfinal\AuthOptions\obj\Debug\net5.0\AuthOptions.AssemblyInfoInputs.cache
+D:\Програмирование\Angular\Examfinal\Examfinal\AuthOptions\obj\Debug\net5.0\AuthOptions.AssemblyInfo.cs
+D:\Програмирование\Angular\Examfinal\Examfinal\AuthOptions\obj\Debug\net5.0\AuthOptions.csproj.CoreCompileInputs.cache
+D:\Програмирование\Angular\Examfinal\Examfinal\AuthOptions\obj\Debug\net5.0\AuthOptions.dll
+D:\Програмирование\Angular\Examfinal\Examfinal\AuthOptions\obj\Debug\net5.0\ref\AuthOptions.dll
+D:\Програмирование\Angular\Examfinal\Examfinal\AuthOptions\obj\Debug\net5.0\AuthOptions.pdb

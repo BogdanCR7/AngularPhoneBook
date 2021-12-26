@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "++HfuORxHohWLHdNFvvp0dqJoM2Wyzi6lpXr+bvdYFTd8ZFBoNK6jjTBsxgXVftEcpmNytZjjmr3DJhAAoNMeQ==",
+  "success": true,
+  "projectFilePath": "D:\\Програмирование\\Angular\\Examfinal\\Examfinal\\AuthOptions\\AuthOptions.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Bogdan\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
+    "C:\\Users\\Bogdan\\.nuget\\packages\\microsoft.identitymodel.logging\\6.14.1\\microsoft.identitymodel.logging.6.14.1.nupkg.sha512",
+    "C:\\Users\\Bogdan\\.nuget\\packages\\microsoft.identitymodel.tokens\\6.14.1\\microsoft.identitymodel.tokens.6.14.1.nupkg.sha512",
+    "C:\\Users\\Bogdan\\.nuget\\packages\\system.security.cryptography.cng\\4.5.0\\system.security.cryptography.cng.4.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}
